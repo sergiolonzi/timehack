@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="0.67024358"
+     inkscape:cx="535.62617"
+     inkscape:cy="391.64866"
+     inkscape:window-width="1368"
+     inkscape:window-height="704"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     showguides="true"
+     inkscape:guide-bbox="true" />
+  <defs
+     id="defs2">
+    <rect
+       x="399.13297"
+       y="149.62325"
+       width="545.93034"
+       height="208.47635"
+       id="rect9807" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g27406">
+      <g
+         id="g27389">
+        <path
+           style="fill:#022159;fill-opacity:0.996078;stroke:#022159;stroke-width:0.7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.996078"
+           d="m 52.540957,121.59851 8.212508,4.40495 -1.341713,-7.37259 z"
+           id="path3241"
+           sodipodi:nodetypes="cccc"
+           inkscape:transform-center-x="0.7912863"
+           inkscape:transform-center-y="0.66917096" />
+        <path
+           id="path3832"
+           style="fill:none;stroke:#022159;stroke-width:5.597;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.996078"
+           d="m 56.831349,123.48984 c -5.826966,8.05858 -16.631919,10.71295 -25.529628,6.27165 -8.897704,-4.44129 -13.2711,-14.67194 -10.333326,-24.17267 2.937774,-9.50072 12.322637,-15.477098 22.174273,-14.120802 9.851635,1.356296 17.272406,9.646342 17.533581,19.587472"
+           sodipodi:nodetypes="csssc" />
+        <g
+           id="g6330"
+           transform="translate(-35.591894,56.182157)">
+          <path
+             style="fill:none;stroke:#022159;stroke-width:1.765;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.996078"
+             d="m 84.216586,56.717635 h -9.03865 V 43.99657"
+             id="path5888" />
+          <ellipse
+             style="fill:#022159;fill-opacity:0.996078;stroke:#022159;stroke-width:1.33407;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.996078"
+             id="path6098"
+             cx="75.431496"
+             cy="56.462685"
+             rx="1.0640355"
+             ry="0.91963971" />
+        </g>
+      </g>
+      <g
+         id="g27394">
+        <text
+           xml:space="preserve"
+           transform="matrix(0.25059134,0,0,0.19308394,-34.664178,70.847765)"
+           id="text9805"
+           style="font-style:normal;font-weight:normal;font-size:126.667px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect9807);fill:#022159;fill-opacity:0.996078;stroke:none"><tspan
+             x="399.13281"
+             y="264.43171"
+             id="tspan27426"><tspan
+               style="font-family:Anton;-inkscape-font-specification:Anton"
+               id="tspan27424">TimeHack</tspan></tspan></text>
+        <path
+           style="fill:none;stroke:#ff6600;stroke-width:2.86996;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="M 65.680572,125.31289 H 193.69524"
+           id="path27282" />
+      </g>
+    </g>
+  </g>
+</svg>
