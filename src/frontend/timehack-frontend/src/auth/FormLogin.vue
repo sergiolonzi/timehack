@@ -15,13 +15,14 @@ function loginUser() {
 </script>
 <template>
   <form @submit.prevent="loginUser" class="border py-4 px-4">
+    <h1 class="greeting">Login</h1>
     <Message />
 
     <div class="form-group my-3">
       <label for="username">Username</label>
       <input
         type="text"
-        class="form-control"
+        class="form-control rounded-0"
         id="inputUsername"
         placeholder="Enter Username"
         v-model="usernameValue"
@@ -35,7 +36,7 @@ function loginUser() {
         type="password"
         v-model="passwordValue"
         name="password"
-        class="form-control"
+        class="form-control rounded-0"
         id="inputPassword"
         placeholder="Enter Password"
         required
@@ -43,7 +44,7 @@ function loginUser() {
     </div>
     <ul class="nav justify-content-center list-unstyled d-flex">
       <li class="ms-3">
-        <button class="btn btn-primary">Login</button>
+        <button class="btn btn-primary rounded-0">Login</button>
       </li>
       <li class="ms-3 align-bottom">
         <RouterLink to="/register" class="nav-link"

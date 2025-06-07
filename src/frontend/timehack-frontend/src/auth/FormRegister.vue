@@ -22,12 +22,13 @@ function registerUser() {
 </script>
 <template>
   <form @submit.prevent="registerUser" class="border py-4 px-4">
+    <h1>Register</h1>
     <Message />
     <div class="form-group my-3">
       <label for="username">Username</label>
       <input
         type="text"
-        class="form-control"
+        class="form-control rounded-0"
         id="inputUsername"
         placeholder="Enter Username"
         v-model="usernameValue"
@@ -39,7 +40,7 @@ function registerUser() {
       <label for="email">Email</label>
       <input
         type="text"
-        class="form-control"
+        class="form-control rounded-0"
         id="inputEmail"
         placeholder="Enter Email"
         v-model="emailValue"
@@ -51,7 +52,7 @@ function registerUser() {
       <label for="password">Password</label>
       <input
         type="password"
-        class="form-control"
+        class="form-control rounded-0"
         id="inputPassword"
         placeholder="Enter Password"
         v-model="passwordValue"
@@ -63,7 +64,7 @@ function registerUser() {
       <label for="passwordConfirm">Password Confirm</label>
       <input
         type="password"
-        class="form-control"
+        class="form-control rounded-0"
         id="inputPasswordConfirm"
         placeholder="Confirm Password"
         v-model="passwordConfirmValue"
@@ -71,7 +72,7 @@ function registerUser() {
         required
       />
     </div>
-    <button class="btn btn-primary">Register</button>
+    <button class="btn btn-primary rounded-0">Register</button>
   </form>
 </template>
 <style></style>

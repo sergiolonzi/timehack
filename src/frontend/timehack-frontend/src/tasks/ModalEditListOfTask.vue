@@ -1,31 +1,33 @@
 <script setup>
-import { ref } from "vue";
+import { ref, computed } from "vue";
 import { useTaskStore } from "./taskStore";
 
 const taskStore = useTaskStore();
 const props = defineProps({
   show: Boolean,
   listOfTaskId: Number,
+  listOfTaskName: String,
 });
 const emit = defineEmits(["close"]);
-const nameValue = ref("");
+const name = ref(false);
 
-/*
- *
- *
- *
- *
- *   This change param to form to local.
- *
- *
- */
+const nameValue = computed({
+  // getter
+  get() {
+    return props.listOfTaskName;
+  },
+  // setter
+  set(newValue) {
+    name.value = newValue;
+  },
+});
+
 function editListOfTasks(listOfTaskId) {
   taskStore.editListOfTasks({
     id: listOfTaskId,
-    name: nameValue.value,
+    name: name.value,
     description: "",
   });
-  nameValue.value = "";
   emit("close");
 }
 </script>
@@ -34,8 +36,8 @@ function editListOfTasks(listOfTaskId) {
   <Transition name="modal">
     <div v-if="show" class="modal-mask">
       <div class="modal-container">
-        <div class="modal-header">
-          <slot name="header">Edit List</slot>
+        <div>
+          <h3 name="header">Edit List</h3>
         </div>
         <div class="modal-body">
           <form @submit.prevent="editListOfTasks(listOfTaskId)">
@@ -45,19 +47,21 @@ function editListOfTasks(listOfTaskId) {
                 type="text"
                 v-model="nameValue"
                 required
-                class="rounded-0"
+                class="form-control rounded-0"
               />
             </div>
-            <ul class="nav list-unstyled d-flex py-2">
-              <li class="ms-3">
-                <button class="btn btn-primary rounded-0" id="button-addon1">
-                  Save
-                </button>
-              </li>
-              <li class="ms-3 align-bottom">
-                <a href="#" class="" @click.prevent="$emit('close')">Cancel</a>
-              </li>
-            </ul>
+            <div class="d-grid gap-2 d-md-flex justify-content-end">
+              <button class="btn btn-primary rounded-0" id="button-addon1">
+                Save
+              </button>
+              <button
+                class="btn rounded-0"
+                @click.prevent="$emit('close')"
+                id="button-addon1"
+              >
+                Cancel
+              </button>
+            </div>
           </form>
         </div>
       </div>
@@ -90,7 +94,6 @@ function editListOfTasks(listOfTaskId) {
 
 .modal-header h3 {
   margin-top: 0;
-  color: #42b983;
 }
 
 .modal-body {

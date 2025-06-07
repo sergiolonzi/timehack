@@ -80,6 +80,9 @@ class LoginError(Exception):
     pass
 
 
+class ModelNotFoundError(Exception):
+    pass
+
 # This should use inheritance from ErrorMessage
 class ModelValidationError(Exception):
 

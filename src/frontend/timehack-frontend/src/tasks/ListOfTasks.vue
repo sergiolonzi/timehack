@@ -6,16 +6,16 @@ import ModalEditListOfTask from "./ModalEditListOfTask.vue";
 const taskStore = useTaskStore();
 const showModal = ref(false);
 const listOfTaskId = ref(false);
-
+const listOfTaskName = ref(false);
 
 function deleteListOfTask(id) {
   taskStore.deleteListOfTasks(id);
 }
 
-
-function loadEditListOfTasks(id) {
+function loadEditListOfTasks(id, name) {
   showModal.value = true;
   listOfTaskId.value = id;
+  listOfTaskName.value = name;
 }
 </script>
 <template>
@@ -30,7 +30,7 @@ function loadEditListOfTasks(id) {
         <a
           href="#"
           class="link-underline-opacity-0 link-underline"
-          @click.prevent="loadCurrentListOfTasks(listOfTask.id)"
+          @click.prevent="taskStore.loadCurrentListOfTasks(listOfTask.id)"
           >{{ listOfTask.name }}</a
         >
       </div>
@@ -57,7 +57,7 @@ function loadEditListOfTasks(id) {
         <button
           class="btn btn btn-link py-0 px-0"
           id="show-modal"
-          @click="loadEditListOfTasks(listOfTask.id)"
+          @click="loadEditListOfTasks(listOfTask.id, listOfTask.name)"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +76,12 @@ function loadEditListOfTasks(id) {
     </li>
   </ul>
   <Teleport to="body">
-    <ModalEditListOfTask :show="showModal" :listOfTaskId="listOfTaskId" @close="showModal = false" />
+    <ModalEditListOfTask
+      :show="showModal"
+      :listOfTaskId="listOfTaskId"
+      :listOfTaskName="listOfTaskName"
+      @close="showModal = false"
+    />
   </Teleport>
 </template>
 

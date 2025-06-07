@@ -29,17 +29,14 @@ function isLoggedIn() {
       "/api/is-login",
       {},
       {
-        headers: { "X-CSRFToken": csrftoken }, /// Overide this to check Token
+        headers: { "X-CSRFToken": csrftoken },
       }
     )
     .then(function (response) {
-      console.log("------");
       const validUser = response.data.is_login;
-      console.log("------" + validUser);
       return validUser;
     })
     .catch(function (error) {
-      console.log("------" + error.response.status);
       return false;
     });
 }
@@ -79,16 +76,17 @@ const router = createRouter({
   routes,
 });
 
+// Call Store
 router.beforeEach(async (to, from) => {
   if (to.name === "home" || to.name === "login" || to.name === "register") {
     return true;
   }
-  return isLoggedIn()
-    .then(function (result) {
+  return isLoggedIn().then(function (result) {
+    if (result) {
       return result;
-    })
-    .catch(function (error) {
-      return false;
-    });
+    } else {
+      return { name: "login" };
+    }
+  });
 });
 export default router;

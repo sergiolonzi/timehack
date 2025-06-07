@@ -1,23 +1,44 @@
 <script setup>
-import { ref } from "vue";
+import { ref, computed } from "vue";
 import { useTaskStore } from "./taskStore";
 
 const taskStore = useTaskStore();
 const props = defineProps({
   show: Boolean,
   subtaskId: Number,
+  subtaskName: String,
 });
 const emit = defineEmits(["close"]);
 
-const nameValue = ref("");
+const name = ref(false);
+
+const nameValue = computed({
+  // getter
+  get() {
+    return props.subtaskName;
+  },
+  // setter
+  set(newValue) {
+    name.value = newValue;
+  },
+});
+
+function editTask(taskId) {
+  taskStore.editTask({
+    name: name.value,
+    description: "",
+    taskId: taskId,
+  });
+  //nameValue = "";
+  emit("close");
+}
 
 function editSubtask(subtaskId) {
   taskStore.editSubtask({
-    name: nameValue.value,
+    name: name.value,
     description: "",
     subtaskId: subtaskId,
   });
-  nameValue.value = "";
   emit("close");
 }
 </script>
@@ -25,30 +46,32 @@ function editSubtask(subtaskId) {
   <Transition name="modal">
     <div v-if="show" class="modal-mask">
       <div class="modal-container">
-        <div class="modal-header">
+        <div>
           <h3 name="header">Edit Subtask</h3>
         </div>
         <div class="modal-body">
           <form @submit.prevent="editSubtask(subtaskId)">
             <div class="form-group my-3">
-              <label for="name">Name:</label>
+              <label for="name">New Name:</label>
               <input
                 type="text"
                 v-model="nameValue"
                 required
-                class="rounded-0"
+                class="form-control rounded-0"
               />
             </div>
-            <ul class="nav list-unstyled d-flex py-2">
-              <li class="ms-3">
-                <button class="btn btn-primary rounded-0" id="button-addon1">
-                  Save
-                </button>
-              </li>
-              <li class="ms-3 align-bottom">
-                <a href="#" class="" @click.prevent="$emit('close')">Cancel</a>
-              </li>
-            </ul>
+            <div class="d-grid gap-2 d-md-flex justify-content-end">
+              <button class="btn btn-primary rounded-0" id="button-addon1">
+                Save
+              </button>
+              <button
+                class="btn rounded-0"
+                @click.prevent="$emit('close')"
+                id="button-addon1"
+              >
+                Cancel
+              </button>
+            </div>
           </form>
         </div>
       </div>
@@ -81,7 +104,6 @@ function editSubtask(subtaskId) {
 
 .modal-header h3 {
   margin-top: 0;
-  color: #42b983;
 }
 
 .modal-body {

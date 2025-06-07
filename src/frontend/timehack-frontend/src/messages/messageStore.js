@@ -11,7 +11,11 @@ export const useMessageStore = defineStore("messageStore", () => {
     errors.value = { title: title, list: [] };
     let i = 0;
     for (const errorItem of errorIn.list) {
-      errors.value.list.push({ id: i, message: errorItem.message, associated_field: errorItem.associated_field });
+      errors.value.list.push({
+        id: i,
+        message: errorItem.message,
+        associated_field: errorItem.associated_field,
+      });
 
       i++;
     }
@@ -27,7 +31,11 @@ export const useMessageStore = defineStore("messageStore", () => {
     infos.value = { title: title, list: [] };
     let i = 0;
     for (const infoItem of infosIn.list) {
-      infos.value.list.push({ id: i, message: infoItem.message, associated_field: errorItem.associated_field });
+      infos.value.list.push({
+        id: i,
+        message: infoItem.message,
+        associated_field: errorItem.associated_field,
+      });
       i++;
     }
   }

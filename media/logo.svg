@@ -11,7 +11,6 @@
    sodipodi:docname="logo.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
@@ -24,91 +23,72 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="true"
-     inkscape:zoom="0.33512179"
-     inkscape:cx="535.62617"
-     inkscape:cy="583.37"
+     inkscape:zoom="0.47393378"
+     inkscape:cx="256.36493"
+     inkscape:cy="207.83494"
      inkscape:window-width="1368"
      inkscape:window-height="704"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g27389"
      showguides="true"
      inkscape:guide-bbox="true" />
   <defs
      id="defs2">
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient15199">
-      <stop
-         style="stop-color:#916f6f;stop-opacity:1"
-         offset="0"
-         id="stop15195" />
-      <stop
-         style="stop-color:#e6e6e6;stop-opacity:1"
-         offset="1"
-         id="stop15197" />
-    </linearGradient>
     <rect
        x="399.13297"
        y="149.62325"
        width="545.93034"
        height="208.47635"
        id="rect9807" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient15199"
-       id="linearGradient15201"
-       x1="-93.747253"
-       y1="281.32123"
-       x2="188.21364"
-       y2="22.814802"
-       gradientUnits="userSpaceOnUse" />
   </defs>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
-    <rect
-       style="stroke:none;stroke-width:4.70001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;fill:url(#linearGradient15201);fill-opacity:1"
-       id="rect14949"
-       width="374.67117"
-       height="297.40857"
-       x="-65.757843"
-       y="-17.54994"
-       inkscape:export-filename="/home/quark/timehack.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
     <g
        id="g27406"
        transform="translate(0,0.52916667)"
        inkscape:export-filename="/home/quark/timehack.png"
        inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96">
+       inkscape:export-ydpi="96"
+       style="stroke:#1a1a1a">
       <g
          id="g27389"
-         transform="matrix(0.93665115,0,0,0.93655342,1.09353,8.5416096)">
-        <path
-           style="fill:#022159;fill-opacity:0.996078;stroke:#022159;stroke-width:0.7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.996078"
-           d="m 52.540957,121.59851 8.212508,4.40495 -1.341713,-7.37259 z"
-           id="path3241"
-           sodipodi:nodetypes="cccc"
-           inkscape:transform-center-x="0.7912863"
-           inkscape:transform-center-y="0.66917096" />
+         transform="matrix(0.93665115,0,0,0.93655342,1.09353,8.5416096)"
+         style="stroke:#1a1a1a">
         <path
            id="path3832"
-           style="fill:none;stroke:#022159;stroke-width:5.597;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.996078"
-           d="m 56.831349,123.48984 c -5.826966,8.05858 -16.631919,10.71295 -25.529628,6.27165 -8.897704,-4.44129 -13.2711,-14.67194 -10.333326,-24.17267 2.937774,-9.50072 12.322637,-15.477098 22.174273,-14.120802 9.851635,1.356296 17.272406,9.646342 17.533581,19.587472"
-           sodipodi:nodetypes="csssc" />
+           style="fill:none;stroke:#000000;stroke-width:6.25238706;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.996078"
+           d="m 56.245788,121.41542 c -4.842074,6.6965 -13.820738,8.90222 -21.214528,5.2116 -7.393785,-3.69061 -11.027976,-12.19204 -8.586754,-20.08693 2.441222,-7.894879 10.239825,-12.861106 18.426306,-11.734056 8.18648,1.127051 14.352968,8.015886 14.569998,16.276736"
+           sodipodi:nodetypes="csssc"
+           inkscape:export-filename="/home/goalone/Work/Repo/timehack/media/logo.png"
+           inkscape:export-xdpi="22.373579"
+           inkscape:export-ydpi="22.373579" />
+        <path
+           style="fill:#000000;fill-opacity:0.996078;stroke:#000000;stroke-width:0.70203;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.996078"
+           d="m 52.175781,119.84914 8.236326,4.41772 -1.345604,-7.39397 z"
+           id="path3241"
+           sodipodi:nodetypes="cccc"
+           inkscape:transform-center-x="0.79358137"
+           inkscape:transform-center-y="0.6711074"
+           inkscape:export-filename="/home/goalone/Work/Repo/timehack/media/logo.png"
+           inkscape:export-xdpi="22.373579"
+           inkscape:export-ydpi="22.373579" />
         <g
            id="g6330"
-           transform="translate(-35.591894,56.182157)">
+           transform="matrix(0.83097677,0,0,0.83097677,-20.55578,65.484304)"
+           style="stroke:#1a1a1a;stroke-width:4.85420215;stroke-miterlimit:4;stroke-dasharray:none"
+           inkscape:export-filename="/home/goalone/Work/Repo/timehack/media/logo.png"
+           inkscape:export-xdpi="22.373579"
+           inkscape:export-ydpi="22.373579">
           <path
-             style="fill:none;stroke:#022159;stroke-width:1.765;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.996078"
+             style="fill:none;stroke:#000000;stroke-width:4.85420215;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.996078"
              d="m 84.216586,56.717635 h -9.03865 V 43.99657"
              id="path5888" />
           <ellipse
-             style="fill:#022159;fill-opacity:0.996078;stroke:#022159;stroke-width:1.33407;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.996078"
+             style="fill:#000000;fill-opacity:0.996078;stroke:#000000;stroke-width:4.85420215;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.996078"
              id="path6098"
              cx="75.431496"
              cy="56.462685"
@@ -118,38 +98,41 @@
       </g>
       <g
          id="g27394"
-         style="stroke:#ff3f00;stroke-width:4.7;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         transform="matrix(0.99278467,0,0,1,0.62592028,0)">
+         style="stroke:#000000;stroke-width:4.7;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         transform="matrix(0.99518349,0,0,1.0024163,-1.6479829,-0.83763293)"
+         inkscape:export-filename="/home/goalone/Work/Repo/timehack/media/logo.png"
+         inkscape:export-xdpi="22.373579"
+         inkscape:export-ydpi="22.373579">
         <text
            xml:space="preserve"
            transform="matrix(0.25059134,0,0,0.19308394,-34.664178,70.847765)"
            id="text9805"
-           style="font-style:normal;font-weight:normal;font-size:126.667px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect9807);fill:#022159;fill-opacity:0.996078;stroke:#ff3f00;stroke-width:21.3669;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"><tspan
+           style="font-style:normal;font-weight:normal;font-size:126.667px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect9807);fill:#022159;fill-opacity:0.996078;stroke:#000000;stroke-width:21.3669;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"><tspan
              x="399.13281"
              y="470.17022"
-             id="tspan15977"><tspan
+             id="tspan2046"><tspan
                dx="0 73.476753 35.192146 123.38901 77.929886 95.24765 77.620636 69.642151"
                style="font-family:Anton;-inkscape-font-specification:Anton"
-               id="tspan15975">TimeHack</tspan></tspan></text>
+               id="tspan2044">TimeHack</tspan></tspan></text>
         <path
-           style="fill:none;stroke:#ff3f00;stroke-width:4.7;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           style="fill:none;stroke:#000000;stroke-width:4.7;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            d="M 65.680572,125.31289 H 193.69524"
            id="path27282" />
       </g>
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:26.8111px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="65.138794"
-       y="121.56139"
+       style="font-style:normal;font-weight:normal;font-size:26.8759px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.265222"
+       x="63.020767"
+       y="121.0162"
        id="text3234"
-       inkscape:export-filename="/home/quark/timehack.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96"><tspan
+       inkscape:export-filename="/home/goalone/Work/Repo/timehack/media/logo.png"
+       inkscape:export-xdpi="22.373579"
+       inkscape:export-ydpi="22.373579"><tspan
          sodipodi:role="line"
          id="tspan3232"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.8111px;font-family:Belanosima;-inkscape-font-specification:'Belanosima Bold';stroke-width:0.264583"
-         x="65.138794"
-         y="121.56139">TimeHack</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.8759px;font-family:Belanosima;-inkscape-font-specification:'Belanosima Bold';stroke:#000000;stroke-width:0.265222"
+         x="63.020767"
+         y="121.0162">TimeHack</tspan></text>
   </g>
 </svg>

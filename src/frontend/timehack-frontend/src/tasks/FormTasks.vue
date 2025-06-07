@@ -11,7 +11,7 @@ function createTask() {
     description: "",
     listOfTasksId: taskStore.currentListOfTasks.id,
   });
-  taskNameValue = "";
+  taskNameValue.value = "";
 }
 </script>
 

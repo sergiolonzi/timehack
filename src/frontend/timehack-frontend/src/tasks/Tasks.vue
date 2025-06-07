@@ -12,22 +12,26 @@ const showModal = ref(false);
 const showModalEditSubtask = ref(false);
 const showModalEditTask = ref(false);
 const taskId = ref(0);
+const taskName = ref("");
 const subtaskId = ref(0);
 const subtaskDone = ref(0);
+const subtaskName = ref("");
 
 function showAddSubtask(id) {
   showModal.value = true;
   taskId.value = id;
 }
 
-function showEditSubtask(id) {
+function showEditSubtask(id, name) {
   showModalEditSubtask.value = true;
+  subtaskName.value = name;
   subtaskId.value = id;
 }
 
-function showEditTask(id) {
-  showModalEditTask.value = true;
+function showEditTask(id, name) {
   taskId.value = id;
+  taskName.value = name;
+  showModalEditTask.value = true;
 }
 
 function deleteTask(id) {
@@ -106,7 +110,7 @@ function doneSubtask(id, done) {
                 <button
                   class="btn btn btn-link py-0 px-0"
                   id="show-modal"
-                  @click="showEditTask(task.id)"
+                  @click="showEditTask(task.id, task.name)"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -174,7 +178,7 @@ function doneSubtask(id, done) {
                   <button
                     class="btn btn btn-link py-0 px-0"
                     id="show-modal"
-                    @click="showEditSubtask(subtask.id)"
+                    @click="showEditSubtask(subtask.id, subtask.name)"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -217,6 +221,7 @@ function doneSubtask(id, done) {
     <ModalEditSubtask
       :show="showModalEditSubtask"
       :subtaskId="subtaskId"
+      :subtaskName="subtaskName"
       @close="showModalEditSubtask = false"
     />
   </Teleport>
@@ -224,6 +229,7 @@ function doneSubtask(id, done) {
     <ModalEditTask
       :show="showModalEditTask"
       :taskId="taskId"
+      :taskName="taskName"
       @close="showModalEditTask = false"
     />
   </Teleport>

@@ -16,13 +16,15 @@ from .schemas import (ListOfTasksIn, ListOfTasksOut, LoginSchemaIn, SubTaskIn,
                       SubTaskOut, TaskIn, TaskOut, UserSchemaIn, UserSchemaOut,
                       UserUpdateSchemaIn)
 from .utils.validators import validate_email
-from .utils.errors import ErrorMessage, LoginError, InputValidationError, ModelValidationError
+from .utils.errors import ErrorMessage, LoginError, InputValidationError, ModelValidationError, ModelNotFoundError
 
 router = Router()
 
 #######################################
 # Auth
 #######################################
+
+
 @router.post("/csrf")
 @ensure_csrf_cookie
 @csrf_exempt
@@ -79,8 +81,8 @@ def create_user_endpoint(request, payload: UserSchemaIn):
     # Model:
     try:
         user = User()
-        user.username=username
-        user.email=email
+        user.username = username
+        user.email = email
         user.set_password(password)
         user.full_clean()
         user.save()
@@ -91,8 +93,9 @@ def create_user_endpoint(request, payload: UserSchemaIn):
         raise model_validation_error
     except ValidationError as error:
         model_validation_error = ModelValidationError()
-        model_validation_error.add_from_django(error)               
+        model_validation_error.add_from_django(error)
         raise model_validation_error
+
 
 @router.put("/user/", response=UserSchemaOut, auth=django_auth)
 def update_user_endpoint(request, payload: UserUpdateSchemaIn):
@@ -102,10 +105,10 @@ def update_user_endpoint(request, payload: UserUpdateSchemaIn):
     password = payload.password
     password_confirm = payload.password_confirm
 
-    if password != password_confirm:
+    if password and password != password_confirm:
         input_validation_error.add(code='form-0001')
 
-    if validate_email(email):
+    if email and not validate_email(email):
         input_validation_error.add(code='form-0002')
 
     if input_validation_error.errors:
@@ -119,14 +122,14 @@ def update_user_endpoint(request, payload: UserUpdateSchemaIn):
             user.set_password(password)
         user.save()
         login(request, user)
-        return 201, user
+        return 200, user
     except IntegrityError:
         model_validation_error = ModelValidationError()
         model_validation_error.add(code='model-0001')
         raise model_validation_error
     except ValidationError as error:
         model_validation_error = ModelValidationError()
-        model_validation_error.add_from_django(django_error=error)               
+        model_validation_error.add_from_django(django_error=error)
         raise model_validation_error
 
 
@@ -168,7 +171,7 @@ def create_list_of_tasks_endpoint(request, payload: ListOfTasksIn):
         raise model_validation_error
     except ValidationError as error:
         model_validation_error = ModelValidationError()
-        model_validation_error.add_from_django(django_error=error)               
+        model_validation_error.add_from_django(django_error=error)
         raise model_validation_error
 
 
@@ -212,7 +215,7 @@ def update_list_of_tasks_endpoint(request, list_of_tasks_id: int, payload: ListO
         raise model_validation_error
     except ValidationError as error:
         model_validation_error = ModelValidationError()
-        model_validation_error.add_from_django(django_error=error)               
+        model_validation_error.add_from_django(django_error=error)
         raise model_validation_error
 
 
@@ -224,7 +227,6 @@ def delete_list_of_tasks_endpoint(request, list_of_tasks_id: int):
     except:
         model_not_found_error = ModelNotFoundError(Exception)
         raise model_not_found_error
-
 
     list_of_tasks.delete()
     lists_of_tags = ListOfTasks.objects.filter(user=user)
@@ -277,8 +279,6 @@ def create_task_endpoint(request, payload: TaskIn):
         return 403, {"success": False, 'errors': errors}
     except ValidationError as err:
         for key, value in err.error_dict.items():
-            print('key ' + key)
-            print('value ' + value)
             for code in value:
                 print('code ' + code)
 
@@ -298,7 +298,7 @@ def get_task_endpoint(request, task_id: int):
     try:
         task = Task.objects.get(
             id=task_id, list_of_tasks__user=user)  # Test this
-        return tasks
+        return task
     except:
         errors.append({
             "error": "auth-0002",
