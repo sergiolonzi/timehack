@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="favicon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="1.3404872"
+     inkscape:cx="338.30984"
+     inkscape:cy="500.19129"
+     inkscape:window-width="1368"
+     inkscape:window-height="704"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g27389"
+     showguides="true"
+     inkscape:guide-bbox="true" />
+  <defs
+     id="defs2">
+    <rect
+       x="399.13297"
+       y="149.62325"
+       width="545.93034"
+       height="208.47635"
+       id="rect9807" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g27406"
+       transform="translate(0,0.52916667)"
+       inkscape:export-filename="/home/quark/timehack.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       style="stroke:#1a1a1a">
+      <g
+         id="g27389"
+         transform="matrix(0.93665115,0,0,0.93655342,1.09353,8.5416096)"
+         style="stroke:#1a1a1a">
+        <path
+           id="path3832"
+           style="fill:none;stroke:#d45500;stroke-width:6.25239;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.996078"
+           d="m 110.22919,149.59209 c -4.84207,6.6965 -13.820735,8.90222 -21.214525,5.2116 -7.393785,-3.69061 -11.027976,-12.19204 -8.586754,-20.08693 2.441222,-7.89488 10.239825,-12.86111 18.426306,-11.73406 8.186483,1.12705 14.352973,8.01589 14.570003,16.27674"
+           sodipodi:nodetypes="csssc"
+           inkscape:export-filename="/home/goalone/Work/Repo/timehack/media/favicon.png"
+           inkscape:export-xdpi="642.05408"
+           inkscape:export-ydpi="642.05408" />
+        <path
+           style="fill:#d45500;fill-opacity:0.996078;stroke:#d45500;stroke-width:0.70203;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.996078"
+           d="m 106.15919,148.02581 8.23632,4.41772 -1.3456,-7.39397 z"
+           id="path3241"
+           sodipodi:nodetypes="cccc"
+           inkscape:transform-center-x="0.79358137"
+           inkscape:transform-center-y="0.6711074"
+           inkscape:export-filename="/home/goalone/Work/Repo/timehack/media/favicon.png"
+           inkscape:export-xdpi="642.05408"
+           inkscape:export-ydpi="642.05408" />
+        <g
+           id="g6330"
+           transform="matrix(0.83097677,0,0,0.83097677,33.427625,93.660972)"
+           style="stroke:#d45500;stroke-width:4.8542;stroke-miterlimit:4;stroke-dasharray:none"
+           inkscape:export-filename="/home/goalone/Work/Repo/timehack/media/favicon.png"
+           inkscape:export-xdpi="642.05408"
+           inkscape:export-ydpi="642.05408">
+          <path
+             style="fill:none;stroke:#d45500;stroke-width:4.8542;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.996078"
+             d="m 84.216586,56.717635 h -9.03865 V 43.99657"
+             id="path5888" />
+          <ellipse
+             style="fill:#d45500;fill-opacity:0.996078;stroke:#d45500;stroke-width:4.8542;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.996078"
+             id="path6098"
+             cx="75.431496"
+             cy="56.462685"
+             rx="1.0640355"
+             ry="0.91963971" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

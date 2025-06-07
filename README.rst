@@ -10,6 +10,7 @@ The aim of this project is to make a complete Project Management app.
 Including the functions of:
 
 * Kanban.
+* Issue Tracker.
 * To Do list.
 * Note taker.
 * Calendar.
