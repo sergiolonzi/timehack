@@ -1,2 +1,0 @@
-# timehack
-To do app.
